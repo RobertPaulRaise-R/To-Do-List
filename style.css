@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(131deg, #ffc451 15.99%, #f7d083 81.93%);
+}
+
+*:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #ee964b;
+  border: none;
+  padding: 2px 4px;
+  height: 2rem;
+}
+
+.icon {
+  color: #faf0ca;
+}
+
+/* HEADER */
+.nav {
+  height: 5rem;
+  background: #ffdc73;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.nav ul li {
+  padding: 1rem;
+  list-style: none;
+}
+
+.nav-list {
+  list-style: none;
+  text-decoration: none;
+  color: #d86300;
+  font-size: 2.4rem;
+}
+
+/* MAIN */
+.app {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  width: 40rem;
+  background-color: #faf0ca;
+}
+
+/* ADD TASK */
+.add-task {
+  width: 35rem;
+
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #ee964b;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-task-input {
+  height: 3rem;
+  width: 28rem;
+  border: none;
+  padding: 0 1rem;
+  background-color: #faf0ca;
+  color: #d86300;
+}
+
+.add-task-input::placeholder {
+  color: #ffc451;
+}
+
+.add-btn {
+  width: 4rem;
+  /* background-color: #ee964b; */
+  border: none;
+  font-size: 2rem;
+}
+
+/* TASK */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.taskEl {
+  width: 36rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  /* background-color: #d86300; */
+  transition: all 0.3s;
+}
+
+.task-lable {
+  width: 25rem;
+  font-size: 1.4rem;
+  background-color: #f4d35e;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-name-input {
+  width: 20rem;
+  border: none;
+  background-color: #f4d35e;
+}
+
+.done-btn {
+  font-size: 1rem;
+  color: #faf0ca;
+  background-color: #ee964b;
+  border: none;
+  padding: 2px 4px;
+}
+
+.checkbox {
+  background-color: #ee964b;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-icon {
+  opacity: 0;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+
+.checkbox-icon.clicked {
+  opacity: 1;
+}
